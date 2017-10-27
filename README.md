@@ -5,20 +5,18 @@
 [Demo](https://benfarhat.github.io/lorem-ipsum-generator/)
 
 ## Usage
-### Some examples with attribute:
+### Some examples with data-* attributes:
 
 ```
- 
-    
     <!-- Lorem Ipsum generator -->
     <script src="src/js/lorem_ipsum.js"></script>
 
+    
     <!-- Simple usage -->
     <h2 data-lorem-count="2" data-lorem-end=""></h2>
     <p data-lorem-count="60"></p>
     
 
-    
     <!-- With form element (input and textarea) -->
     <h2><script>randomLorem(3,'- ',' -')</script></h2>
     <label>Tell us about your projects:</label>
@@ -28,7 +26,7 @@
      
 ```
 
-### Some examples with function (lorem -> Using a dictionary from lorem Ipsum):
+### Some examples with function (lorem -> Using a word dictionary from lorem Ipsum):
 
 ```
 
@@ -40,25 +38,23 @@
     <h2><script>lorem(3)</script></h2>
     <p><script>lorem(60,'','... <a href="#">Read More</a>')</script></p> 
 
-    
-     
 ```
 
-### Some examples with function (generateLorem -> generate word from custom alphabet (consonants & vowels):
+### Some examples with function (generateLorem -> generate words from custom alphabet (consonants & vowels):
 
 ```
     
     <!-- Lorem Ipsum generator -->
     <script src="src/js/lorem_ipsum.js"></script>
+    
+    
+    <!-- By default it uses english alphabet -->
+    <h2><script>randomLorem(3,'- ',' -')</script></h2>
 
     
     <!-- With other character (Greek here) -->
     <h2><script>randomLorem(3,'- ',' -','αβγδϵζηθικλμνξοπρστυϕχψω','')</script></h2>
     <p><script>randomLorem(80,'','...','αβγδϵζηθικλμνξοπρστυϕχψω','')</script></p> 
-    
-    
-    <!-- By default it uses english alphabet -->
-    <h2><script>randomLorem(3,'- ',' -')</script></h2>
     
     
     <!-- With other character (arabic alphabet here) -->
